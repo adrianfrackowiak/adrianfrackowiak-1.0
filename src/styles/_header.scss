@@ -1,0 +1,21 @@
+header {
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links {
+        justify-content: flex-end;
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                font-size: 0.7825rem;
+                font-weight: 900;
+                padding: 0 0 0 4rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

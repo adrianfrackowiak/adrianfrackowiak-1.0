@@ -1,0 +1,18 @@
+footer {
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-socials {
+        justify-content: flex-end;
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                padding: 0 0 0 4rem;
+            }
+        }
+    }
+}
