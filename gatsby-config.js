@@ -15,6 +15,7 @@ module.exports = {
         },
         'gatsby-transformer-remark',
         'gatsby-plugin-mdx',
+        `gatsby-plugin-scroll-reveal`,
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         {

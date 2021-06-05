@@ -1,0 +1,40 @@
+main {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .hero-img {
+        margin: 0 0 2rem 0;
+    }
+
+    p {
+        font-size: 0.9375rem;
+        font-weight: 800;
+        margin: 0 0 2rem 0;
+    }
+
+    h2 {
+        font-size: 2.625rem;
+        font-weight: 900;
+        margin: 0 0 3rem 0;
+    }
+
+    button {
+        height: 3.5rem;
+        width: 10.125rem;
+
+        font-size: 0.75rem;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        color: $white;
+        background: $black;
+        border: none;
+        border-radius: 10rem;
+        outline: none;
+    }
+}

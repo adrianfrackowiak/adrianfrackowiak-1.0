@@ -8,11 +8,16 @@ const Main = () => {
                 src="../images/heroimg.png"
                 alt="hero - adrianfrackowiak"
                 quality={95}
+                className="hero-img"
             />
             <p>
-                Hi! I'm Adrian! If you want to know more about me scroll down.
+                Hi! I'm Adrian!
+                <br /> If you want to know more about me, scroll down.
             </p>
-            <h2>I'm creating beautiful websites. Got a project? Let's talk!</h2>
+            <h2>
+                I'm creating beautiful websites.
+                <br /> Got a project? Let's talk!
+            </h2>
             <button>CONTACT</button>
         </main>
     );

@@ -11,3 +11,13 @@ body {
     font-weight: 400;
     font-size: 0.8725rem;
 }
+
+::-moz-selection {
+    color: rgb(255, 255, 255);
+    background: rgb(74, 22, 170);
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(74, 22, 170);
+}

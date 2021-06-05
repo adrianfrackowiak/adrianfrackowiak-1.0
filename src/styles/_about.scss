@@ -1,0 +1,19 @@
+.about {
+    min-height: 90vh;
+    display: flex;
+
+    .about-img {
+        width: 50%;
+    }
+
+    .about-desc {
+        width: 50%;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 5rem;
+            margin: 0 0 2rem 0;
+        }
+    }
+}
