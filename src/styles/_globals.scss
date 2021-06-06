@@ -14,10 +14,40 @@ body {
 
 ::-moz-selection {
     color: rgb(255, 255, 255);
-    background: rgb(74, 22, 170);
+    background: rgb(48, 198, 243);
 }
 
 ::selection {
     color: rgb(255, 255, 255);
-    background: rgb(74, 22, 170);
+    background: rgb(48, 198, 243);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 5rem;
+}
+
+h2 {
+    font-size: 3.125rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 0.9375rem;
+    font-weight: 800;
+}
+
+p {
+    font-size: 0.9375rem;
+    font-weight: 800;
+}
+
+li {
+    list-style: none;
 }

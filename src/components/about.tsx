@@ -9,12 +9,11 @@ const About: React.FC = () => {
                     src="../images/aboutimg.png"
                     alt="about - adrianfrackowiak"
                     quality={95}
-                    className="about-img"
                 />
             </div>
             <div className="about-desc">
                 <h1>
-                    Adrian Frąckowiak
+                    Adrian Frąckowiak 🌊
                     <br />
                     Front End Developer
                 </h1>

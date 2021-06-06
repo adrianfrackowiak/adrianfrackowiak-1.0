@@ -2,6 +2,7 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import Main from '../components/main';
 import About from '../components/about';
+import Resume from '../components/resume';
 import '../styles/index.scss';
 
 const IndexPage: React.FC = () => {
@@ -9,6 +10,7 @@ const IndexPage: React.FC = () => {
         <Layout>
             <Main />
             <About />
+            <Resume />
         </Layout>
     );
 };

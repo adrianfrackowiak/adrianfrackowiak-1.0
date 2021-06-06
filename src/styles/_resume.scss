@@ -1,0 +1,61 @@
+.resume {
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin: 0 0 1rem 0;
+    }
+
+    li {
+        margin: 0 0 0.3rem 0;
+    }
+
+    .resume-title {
+        margin: 0 0 2rem 10rem;
+    }
+
+    .resume-content {
+        display: flex;
+        margin: 0 0 0 10rem;
+
+        .resume-left {
+            width: 50%;
+
+            .works-list {
+                display: flex;
+                height: 12rem;
+
+                ul {
+                    width: 50%;
+
+                    .works-title {
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+
+                    .works-place {
+                        font-weight: 400;
+                    }
+
+                    .works-date {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .resume-right {
+            width: 50%;
+
+            .skills-list {
+                display: flex;
+                height: 12rem;
+
+                ul {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

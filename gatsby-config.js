@@ -15,7 +15,21 @@ module.exports = {
         },
         'gatsby-transformer-remark',
         'gatsby-plugin-mdx',
-        `gatsby-plugin-scroll-reveal`,
+        {
+            resolve: `gatsby-plugin-scroll-reveal`,
+            options: {
+                threshold: 1,
+                once: true,
+                disable: false,
+
+                selector: '[data-sal]',
+                animateClassName: 'sal-animate',
+                disabledClassName: 'sal-disabled',
+                rootMargin: '0% 50%',
+                enterEventName: 'sal:in',
+                exitEventName: 'sal:out',
+            },
+        },
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         {

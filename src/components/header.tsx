@@ -3,14 +3,15 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Header: React.FC = () => {
     return (
-        <header data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
+        <header>
             <StaticImage
                 src="../images/icon.png"
                 alt="logo - adrianfrackowiak"
                 quality={95}
                 data-sal="slide-up"
                 data-sal-delay="300"
-                data-sal-easing="ease"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-back"
             />
             <nav className="nav-links">
                 <ul>
