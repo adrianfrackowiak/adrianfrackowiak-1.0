@@ -1,0 +1,32 @@
+.contact {
+    display: flex;
+    justify-content: center;
+
+    .contact-field {
+        text-align: center;
+
+        .contact-title {
+            width: auto;
+            .wave {
+                animation-name: wave;
+                animation-duration: 2.5s;
+                animation-iteration-count: infinite;
+                transform-origin: 70% 70%;
+                display: inline-block;
+            }
+        }
+
+        .contact-title:after {
+            content: '';
+            display: block;
+            width: 3rem;
+            height: 2px;
+            background: $black;
+            transition: width 0.3s;
+        }
+
+        .contact-title:hover:after {
+            width: 100%;
+        }
+    }
+}

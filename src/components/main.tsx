@@ -1,13 +1,11 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 
-const Main = () => {
+const Main: React.FC = () => {
     return (
         <main>
-            <StaticImage
-                src="../images/heroimg.png"
+            <img
+                src="../../heroimg.png"
                 alt="hero - adrianfrackowiak"
-                quality={95}
                 className="hero-img"
             />
             <p>

@@ -1,8 +1,17 @@
 import React from 'react';
+import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { MdEmail } from 'react-icons/md';
+import { FaLinkedin } from 'react-icons/fa';
 
-const Resume = () => {
+const Resume: React.FC = () => {
     return (
-        <section className="resume">
+        <section
+            className="resume"
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="2000"
+            data-sal-easing="ease-out-back"
+        >
             <div className="resume-title">
                 <h2>Resume</h2>
             </div>
@@ -28,9 +37,36 @@ const Resume = () => {
                     <h3>Education</h3>
                     <div className="education-list">
                         <ul>
-                            <li>ZSE2</li>
+                            <li className="edu-title">IT Specialist</li>
+                            <li className="edu-place">
+                                Zespół Szkół Elektrycznych nr 2 - Poznań, Poland
+                            </li>
+                            <li className="edu-date">
+                                September 2017 - May 2021
+                            </li>
                         </ul>
                     </div>
+                    <h3>Open to work</h3>
+                    <ul>
+                        <li>adrianfrackowiak@icloud.com</li>
+                        <li>+48 664 659 926</li>
+                    </ul>
+                    <nav className="nav-socials">
+                        <ul>
+                            <li>
+                                <AiFillGithub />
+                            </li>
+                            <li>
+                                <AiFillInstagram />
+                            </li>
+                            <li>
+                                <FaLinkedin />
+                            </li>
+                            <li>
+                                <MdEmail />
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div className="resume-right">
                     <h3>Skills</h3>
@@ -50,6 +86,18 @@ const Resume = () => {
                             <li>ADOBE ILLUSTRATOR</li>
                             <li>ADOBE XD</li>
                         </ul>
+                    </div>
+                    <h3>Languages</h3>
+                    <div className="lang-list">
+                        <ul>
+                            <li>Polish - Native</li>
+                            <li>English - Upper intermediate</li>
+                        </ul>
+                    </div>
+                    <div className="resume-button">
+                        <a href="/" className="btn">
+                            Get my resume
+                        </a>
                     </div>
                 </div>
             </div>

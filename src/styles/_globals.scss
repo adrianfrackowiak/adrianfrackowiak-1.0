@@ -10,6 +10,7 @@ body {
     font-family: $font;
     font-weight: 400;
     font-size: 0.8725rem;
+    letter-spacing: 0.06rem;
 }
 
 ::-moz-selection {
@@ -22,6 +23,13 @@ body {
     background: rgb(48, 198, 243);
 }
 
+button {
+    font-family: $font;
+    background: none;
+    outline: none;
+    border: none;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 900;
@@ -29,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.125rem;
+    font-size: 4rem;
     font-weight: 900;
 }
 
@@ -45,9 +53,54 @@ h4 {
 
 p {
     font-size: 0.9375rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $black;
+    transition: width 0.3s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }

@@ -1,15 +1,16 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const About: React.FC = () => {
     return (
-        <section className="about">
+        <section
+            className="about"
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="2000"
+            data-sal-easing="ease-out-back"
+        >
             <div className="about-img">
-                <StaticImage
-                    src="../images/aboutimg.png"
-                    alt="about - adrianfrackowiak"
-                    quality={95}
-                />
+                <img src="../../aboutimg.png" alt="about - adrianfrackowiak" />
             </div>
             <div className="about-desc">
                 <h1>

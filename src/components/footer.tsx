@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
+import { FaLinkedin } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
     return (
@@ -13,6 +14,9 @@ const Footer: React.FC = () => {
                     </li>
                     <li>
                         <AiFillInstagram />
+                    </li>
+                    <li>
+                        <FaLinkedin />
                     </li>
                     <li>
                         <MdEmail />
