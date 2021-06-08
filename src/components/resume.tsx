@@ -5,13 +5,7 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const Resume: React.FC = () => {
     return (
-        <section
-            className="resume"
-            data-sal="slide-up"
-            data-sal-delay="100"
-            data-sal-duration="2000"
-            data-sal-easing="ease-out-back"
-        >
+        <section className="resume" id="resume">
             <div className="resume-title">
                 <h2>Resume</h2>
             </div>
@@ -73,7 +67,7 @@ const Resume: React.FC = () => {
                     <div className="skills-list">
                         <ul>
                             <li>SCSS</li>
-                            <li>JS ES6</li>
+                            <li>JAVASCRIPT</li>
                             <li>REACT JS</li>
                             <li>TYPESCRIPT</li>
                             <li>GATSBY</li>

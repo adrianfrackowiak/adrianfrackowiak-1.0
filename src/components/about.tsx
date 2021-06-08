@@ -2,17 +2,23 @@ import React from 'react';
 
 const About: React.FC = () => {
     return (
-        <section
-            className="about"
-            data-sal="slide-up"
-            data-sal-delay="100"
-            data-sal-duration="2000"
-            data-sal-easing="ease-out-back"
-        >
-            <div className="about-img">
+        <section className="about" id="about">
+            <div
+                className="about-img"
+                data-sal="slide-up"
+                data-sal-delay="100"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-bounce"
+            >
                 <img src="../../aboutimg.png" alt="about - adrianfrackowiak" />
             </div>
-            <div className="about-desc">
+            <div
+                className="about-desc"
+                data-sal="slide-up"
+                data-sal-delay="500"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-bounce"
+            >
                 <h1>
                     Adrian Frąckowiak 🌊
                     <br />

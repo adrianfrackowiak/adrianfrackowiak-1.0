@@ -1,4 +1,5 @@
 import React from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Main: React.FC = () => {
     return (
@@ -12,11 +13,24 @@ const Main: React.FC = () => {
                 Hi! I'm Adrian!
                 <br /> If you want to know more about me, scroll down.
             </p>
-            <h2>
+            <h2
+                data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-duration="1200"
+                data-sal-easing="ease-out-bounce"
+            >
                 I'm creating beautiful websites.
                 <br /> Got a project? Let's talk!
             </h2>
-            <button>CONTACT</button>
+            <button
+                className="contact-btn"
+                onClick={() => scrollTo('#contact')}
+            >
+                CONTACT
+            </button>
+            <button className="scroll-btn" onClick={() => scrollTo('#about')}>
+                Scroll down
+            </button>
         </main>
     );
 };

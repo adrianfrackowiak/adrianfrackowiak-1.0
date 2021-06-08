@@ -1,4 +1,5 @@
 import React from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Header: React.FC = () => {
     return (
@@ -7,13 +8,24 @@ const Header: React.FC = () => {
             <nav className="nav-links">
                 <ul>
                     <li>
-                        <a href="/">About</a>
+                        <button onClick={() => scrollTo('#about')}>
+                            About
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Portfolio</a>
+                        <button onClick={() => scrollTo('#resume')}>
+                            Resume
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <button onClick={() => scrollTo('#portfolio')}>
+                            Portfolio
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick={() => scrollTo('#contact')}>
+                            Contact
+                        </button>
                     </li>
                 </ul>
             </nav>

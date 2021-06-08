@@ -1,12 +1,20 @@
 .contact {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    height: 90vh;
 
     .contact-field {
         text-align: center;
 
         .contact-title {
             width: auto;
+            margin: 0 0 5rem 0;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+
             .wave {
                 animation-name: wave;
                 animation-duration: 2.5s;
@@ -19,10 +27,14 @@
         .contact-title:after {
             content: '';
             display: block;
+            position: absolute;
+            top: 2rem;
+            left: 1rem;
             width: 3rem;
-            height: 2px;
-            background: $black;
+            height: 60%;
+            background: rgba(48, 198, 243, 0.15);
             transition: width 0.3s;
+            z-index: -1;
         }
 
         .contact-title:hover:after {

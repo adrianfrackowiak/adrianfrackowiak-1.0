@@ -6,6 +6,7 @@ module.exports = {
         'gatsby-plugin-sass',
         'gatsby-plugin-image',
         'gatsby-plugin-react-helmet',
+        `gatsby-plugin-smoothscroll`,
         'gatsby-plugin-sitemap',
         {
             resolve: 'gatsby-plugin-manifest',
@@ -25,7 +26,7 @@ module.exports = {
                 selector: '[data-sal]',
                 animateClassName: 'sal-animate',
                 disabledClassName: 'sal-disabled',
-                rootMargin: '0% 50%',
+                rootMargin: '50% 100%',
                 enterEventName: 'sal:in',
                 exitEventName: 'sal:out',
             },

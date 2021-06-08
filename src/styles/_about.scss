@@ -1,15 +1,18 @@
 .about {
-    margin: 10rem 0;
+    height: 100vh;
     display: flex;
+    align-items: center;
 
     .about-img {
         width: 50%;
+        height: 50vh;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .about-desc {
         width: 50%;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
