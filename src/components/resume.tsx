@@ -48,16 +48,33 @@ const Resume: React.FC = () => {
                     <nav className="nav-socials">
                         <ul>
                             <li>
-                                <AiFillGithub />
+                                <a
+                                    href="https://github.com/adrianfrackowiak/"
+                                    target="_blank"
+                                >
+                                    <AiFillGithub />
+                                </a>
                             </li>
                             <li>
-                                <AiFillInstagram />
+                                <a
+                                    href="https://www.instagram.com/adifrac_/"
+                                    target="_blank"
+                                >
+                                    <AiFillInstagram />
+                                </a>
                             </li>
                             <li>
-                                <FaLinkedin />
+                                <a
+                                    href="https://www.linkedin.com/in/adrianfrackowiak/"
+                                    target="_blank"
+                                >
+                                    <FaLinkedin />
+                                </a>
                             </li>
                             <li>
-                                <MdEmail />
+                                <a href="mailto: adrianfrackowiak@icloud.com">
+                                    <MdEmail />
+                                </a>
                             </li>
                         </ul>
                     </nav>

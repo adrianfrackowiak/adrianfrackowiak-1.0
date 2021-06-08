@@ -15,7 +15,7 @@ const Main: React.FC = () => {
             </p>
             <h2
                 data-sal="slide-up"
-                data-sal-delay="300"
+                data-sal-delay="100"
                 data-sal-duration="1200"
                 data-sal-easing="ease-out-bounce"
             >

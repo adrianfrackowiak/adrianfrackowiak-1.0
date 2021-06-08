@@ -16,6 +16,29 @@
 
     .resume-title {
         margin: 0 0 2rem 10rem;
+
+        h2 {
+            display: inline;
+            position: relative;
+            z-index: 0;
+        }
+
+        h2:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 2rem;
+            left: 1rem;
+            width: 3rem;
+            height: 60%;
+            background: rgba(48, 198, 243, 0.15);
+            transition: width 0.3s;
+            z-index: -1;
+        }
+
+        h2:hover:after {
+            width: 100%;
+        }
     }
 
     .resume-content {
