@@ -1,0 +1,12 @@
+.blog-container {
+    margin: 0 auto;
+    max-width: 52.5vw;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .blog-content {
+        flex-grow: 1;
+    }
+}
