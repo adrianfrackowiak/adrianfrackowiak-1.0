@@ -13,6 +13,7 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
     return (
         <BlogLayout>
             <section className="blog-post">
+                <p className="post-category">{post.frontmatter.category}</p>
                 <h1>{post.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </section>
@@ -23,20 +24,13 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
 export default BlogPost;
 
 export const query = graphql`
-    query {
-        allMarkdownRemark {
-            edges {
-                node {
-                    excerpt
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        title
-                        description
-                    }
-                    html
-                }
+    query ($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            html
+            frontmatter {
+                title
+                slug
+                category
             }
         }
     }

@@ -1,0 +1,30 @@
+.blog-post {
+    margin: 5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .post-category {
+        margin: 0 0 2rem 0;
+        position: relative;
+        z-index: 0;
+    }
+
+    .post-category:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 0.5rem;
+        height: 60%;
+        background: rgba(48, 198, 243, 0.15);
+        transition: width 0.3s;
+        z-index: -1;
+    }
+
+    .post-category:hover:after {
+        width: 100%;
+    }
+}

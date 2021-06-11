@@ -32,19 +32,19 @@ export const createPages: GatsbyNode['createPages'] = async ({
     actions,
 }) => {
     const { createPage } = actions;
-    const result = (await graphql)<ResultData>`
-      query {
-        allMarkdownRemark {
-          edges {
-            node {
-              fields {
-                slug
-              }
+    const result = await graphql<ResultData>(`
+        query {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        fields {
+                            slug
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    `;
+    `);
 
     if (!result.data) {
         throw new Error('Failed fetching blog posts');
@@ -58,8 +58,6 @@ export const createPages: GatsbyNode['createPages'] = async ({
             path: node.fields.slug,
             component: path.resolve(`./src/templates/blog-post.tsx`),
             context: {
-                // Data passed to context is available
-                // in page queries as GraphQL variables.
                 slug: node.fields.slug,
             },
         });

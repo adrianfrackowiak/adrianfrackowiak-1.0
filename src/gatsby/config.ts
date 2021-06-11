@@ -35,6 +35,7 @@ export default {
         'gatsby-plugin-sharp',
         'gatsby-plugin-apollo',
         `gatsby-plugin-transition-link`,
+        'gatsby-plugin-slug',
         'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-source-filesystem',
@@ -55,8 +56,8 @@ export default {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                name: `blog`,
-                path: `${__dirname}/src/content/`,
+                name: `src`,
+                path: `${__dirname}/..`,
             },
         },
         {
@@ -67,5 +68,4 @@ export default {
             },
         },
     ],
-    'no-submodule-imports': [true, 'gatsby-plugin-transition-link'],
 };
