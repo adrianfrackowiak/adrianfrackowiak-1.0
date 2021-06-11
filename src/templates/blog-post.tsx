@@ -14,8 +14,11 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
         <BlogLayout>
             <section className="blog-post">
                 <p className="post-category">{post.frontmatter.category}</p>
-                <h1>{post.frontmatter.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <h1 className="post-title">{post.frontmatter.title}</h1>
+                <div
+                    className="post-content"
+                    dangerouslySetInnerHTML={{ __html: post.html }}
+                />
             </section>
         </BlogLayout>
     );

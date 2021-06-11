@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Header: React.FC = () => {
     return (
         <header>
-            <img src="../../icon.png" alt="logo - adrianfrackowiak" />
+            <Link to="/">
+                <img src="../../icon.png" alt="logo - adrianfrackowiak" />
+            </Link>
             <nav className="nav-links">
                 <ul>
                     <li>
@@ -25,6 +28,11 @@ const Header: React.FC = () => {
                     <li>
                         <button onClick={() => scrollTo('#contact')}>
                             Contact
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <Link to="/blog">Blog</Link>
                         </button>
                     </li>
                 </ul>

@@ -20,9 +20,11 @@ const Blog: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
                         <Link to={node.fields.slug}>
                             <h3>{node.frontmatter.title}</h3>
                         </Link>
-                        <p className="blog-p">{node.frontmatter.description}</p>
                         <p className="blog-date">{node.frontmatter.date}</p>
-                        <button className="blog-btn">Read more</button>
+                        <p className="blog-p">{node.frontmatter.description}</p>
+                        <button className="blog-btn">
+                            <Link to={node.fields.slug}>Read more</Link>
+                        </button>
                     </div>
                 ))}
             </section>
