@@ -1,23 +1,6 @@
 import path from 'path';
-import { createFilePath } from 'gatsby-source-filesystem';
 import { GatsbyNode } from 'gatsby';
 import { MarkdownRemark } from '../types/markdown-remark';
-
-export const onCreateNode: GatsbyNode['onCreateNode'] = ({
-    node,
-    getNode,
-    actions,
-}) => {
-    const { createNodeField } = actions;
-    if (node.internal.type === `MarkdownRemark`) {
-        const slug = createFilePath({ node, getNode, basePath: `pages` });
-        createNodeField({
-            node,
-            name: `slug`,
-            value: slug,
-        });
-    }
-};
 
 type ResultData = {
     allMarkdownRemark: {
