@@ -2,6 +2,7 @@ export default {
     siteMetadata: {
         title: 'adrianfrackowiak',
         author: 'Adrian Frąckowiak',
+        siteUrl: `https://www.example.com`,
     },
     plugins: [
         'gatsby-plugin-sass',
@@ -16,7 +17,6 @@ export default {
             },
         },
         'gatsby-transformer-remark',
-        'gatsby-plugin-mdx',
         {
             resolve: `gatsby-plugin-scroll-reveal`,
             options: {
