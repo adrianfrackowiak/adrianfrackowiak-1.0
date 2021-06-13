@@ -106,7 +106,11 @@ const Resume: React.FC = () => {
                         </ul>
                     </div>
                     <div className="resume-button">
-                        <a href="/" className="btn">
+                        <a
+                            href="../../adrianfrackowiak-resume.pdf"
+                            className="btn"
+                            download
+                        >
                             Get my resume
                         </a>
                     </div>
