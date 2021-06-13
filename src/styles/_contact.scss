@@ -4,6 +4,7 @@
     align-items: center;
 
     height: 90vh;
+    width: 100vw;
 
     .contact-field {
         text-align: center;
@@ -38,6 +39,17 @@
 
         .contact-title:hover:after {
             width: 100%;
+        }
+    }
+}
+
+@include breakpoint(xs) {
+    .contact {
+        .contact-field {
+            .contact-title:after {
+                top: 1rem;
+                left: 0.5rem;
+            }
         }
     }
 }

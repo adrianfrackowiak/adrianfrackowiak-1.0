@@ -9,7 +9,7 @@ body {
     background: $white;
     font-family: $font;
     font-weight: 400;
-    font-size: 0.8725rem;
+    font-size: 1.25rem;
     letter-spacing: 0.06rem;
 }
 
@@ -58,18 +58,13 @@ h2 {
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
 h4 {
-    font-size: 0.9375rem;
+    font-size: 1.25rem;
     font-weight: 800;
-}
-
-p {
-    font-size: 0.9375rem;
-    font-weight: 600;
 }
 
 li {
@@ -79,6 +74,40 @@ li {
 a {
     text-decoration: none;
     color: $black;
+}
+
+@include breakpoint(l) {
+    h1,
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@include breakpoint(xs) {
+    body {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    h1,
+    h2 {
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@include breakpoint(xxs) {
+    h1,
+    h2 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
 }
 
 @keyframes wave {

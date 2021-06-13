@@ -12,7 +12,7 @@ const Resume: React.FC = () => {
             <div className="resume-content">
                 <div className="resume-left">
                     <h3>IT experience</h3>
-                    <div className="works-list">
+                    <div className="works-list resume-box">
                         <ul>
                             <li className="works-title">JavaScript Trainee</li>
                             <li className="works-place">
@@ -29,7 +29,7 @@ const Resume: React.FC = () => {
                         </ul>
                     </div>
                     <h3>Education</h3>
-                    <div className="education-list">
+                    <div className="education-list resume-box">
                         <ul>
                             <li className="edu-title">IT Specialist</li>
                             <li className="edu-place">
@@ -81,7 +81,7 @@ const Resume: React.FC = () => {
                 </div>
                 <div className="resume-right">
                     <h3>Skills</h3>
-                    <div className="skills-list">
+                    <div className="skills-list resume-box">
                         <ul>
                             <li>SCSS</li>
                             <li>JAVASCRIPT</li>
@@ -99,7 +99,7 @@ const Resume: React.FC = () => {
                         </ul>
                     </div>
                     <h3>Languages</h3>
-                    <div className="lang-list">
+                    <div className="lang-list resume-box">
                         <ul>
                             <li>Polish - Native</li>
                             <li>English - Upper intermediate</li>

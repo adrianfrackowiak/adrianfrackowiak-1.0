@@ -1,5 +1,6 @@
 main {
     min-height: 90vh;
+    padding: 0 12.5rem;
 
     display: flex;
     flex-direction: column;
@@ -64,5 +65,23 @@ main {
 
     .scroll-btn:hover:after {
         width: 100%;
+    }
+}
+
+@include breakpoint(l) {
+    main {
+        padding: 0 6rem;
+    }
+}
+
+@include breakpoint(m) {
+    main {
+        padding: 0 1rem;
+    }
+}
+
+@include breakpoint(xs) {
+    .scroll-btn {
+        display: none;
     }
 }

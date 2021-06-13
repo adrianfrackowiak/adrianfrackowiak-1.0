@@ -1,5 +1,6 @@
 footer {
     height: 10vh;
+    padding: 0 12.5rem;
 
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,46 @@ footer {
             display: flex;
             li {
                 padding: 0 0 0 4rem;
+            }
+        }
+    }
+}
+
+@include breakpoint(xl) {
+    footer {
+        padding: 0 10rem;
+    }
+}
+
+@include breakpoint(l) {
+    footer {
+        padding: 0 6rem;
+    }
+}
+
+@include breakpoint(m) {
+    footer {
+        padding: 0 1rem;
+    }
+}
+
+@include breakpoint(xs) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0;
+        padding: 0;
+
+        .nav-socials {
+            margin: 2rem 0 0 0;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+                display: flex;
+                li {
+                    padding: 0 2rem 0 2rem;
+                }
             }
         }
     }

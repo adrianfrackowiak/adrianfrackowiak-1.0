@@ -1,33 +1,42 @@
 .portfolio {
     height: 100vh;
+    padding: 0 12.5rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
+    position: relative;
+
     .bg-box {
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         background: #86e2d5;
 
         position: absolute;
-        top: 370vh;
+        top: 75vh;
         left: 0;
         z-index: -1;
     }
 
     .project {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
 
         .project-desc {
             width: 40%;
 
             h3 {
                 margin: 0 0 2rem 0;
+                max-width: 95%;
             }
 
             p {
                 font-weight: 400;
                 margin: 0 0 2rem 0;
+                max-width: 95%;
             }
 
             ul {
@@ -59,8 +68,102 @@
             justify-content: flex-end;
 
             img {
-                width: 90%;
+                width: 52rem;
                 height: auto;
+            }
+        }
+    }
+}
+
+@include breakpoint(xl) {
+    .portfolio {
+        padding: 0 10rem;
+
+        .project {
+            .project-img {
+                img {
+                    width: 46rem;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(l) {
+    .portfolio {
+        padding: 0 6rem;
+
+        .project {
+            .project-img {
+                img {
+                    width: 38rem;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(m) {
+    .portfolio {
+        padding: 0 1rem;
+
+        .project {
+            .project-img {
+                img {
+                    width: 36rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(s) {
+    .portfolio {
+        padding: 0 1rem;
+
+        .project {
+            flex-direction: column;
+
+            .project-desc {
+                width: 80%;
+                margin: 0 0 2rem 0;
+            }
+
+            .project-img {
+                width: 80%;
+                justify-content: center;
+
+                img {
+                    width: 42rem;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(xs) {
+    .portfolio {
+        .project {
+            .project-img {
+                img {
+                    width: 28rem;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(xxs) {
+    .portfolio {
+        .project {
+            .project-desc {
+                width: 95vw;
+            }
+            .project-img {
+                img {
+                    width: 20rem;
+                }
             }
         }
     }
