@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { PageProps, graphql, Link } from 'gatsby';
 import BlogLayout from '../components/blog/blog-layout';
 import { MarkdownRemark } from '../types/markdown-remark';
@@ -14,6 +15,10 @@ type GraphQLResult = {
 const Blog: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
     return (
         <BlogLayout>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Blog - Adrian Frąckowiak - Front End Developer</title>
+            </Helmet>
             <section className="blog">
                 {data.allMarkdownRemark.edges.map(({ node }) => (
                     <div className="blog-box" key={node.id}>

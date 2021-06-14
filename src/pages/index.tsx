@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
 import Main from '../components/main';
 import About from '../components/about';
@@ -10,6 +11,10 @@ import '../styles/index.scss';
 const IndexPage: React.FC = () => {
     return (
         <Layout>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Adrian Frąckowiak - Front End Developer</title>
+            </Helmet>
             <Main />
             <About />
             <Resume />
