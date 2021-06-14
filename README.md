@@ -7,7 +7,7 @@ i'm looking for a my first real job as a react dev. i can learn new stuff if it'
 - scss
 - react
 - typescript
-- gatsby / next.js
+- gatsby
 - graphql
 
 ### got a project? let's talk!
