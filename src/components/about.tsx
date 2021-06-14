@@ -3,13 +3,7 @@ import React from 'react';
 const About: React.FC = () => {
     return (
         <section className="about" id="about">
-            <div
-                className="about-img"
-                data-sal="slide-up"
-                data-sal-delay="100"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-bounce"
-            >
+            <div className="about-img">
                 <img src="../../aboutimg.png" alt="about - adrianfrackowiak" />
             </div>
             <div className="about-desc">
