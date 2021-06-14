@@ -30,13 +30,7 @@ const Portfolio: React.FC = () => {
                 github={Pomi.github}
                 live={Pomi.live}
             />
-            <div
-                className="bg-box"
-                data-sal="slide-up"
-                data-sal-delay="100"
-                data-sal-duration="1200"
-                data-sal-easing="ease-out-bounce"
-            ></div>
+            <div className="bg-box"></div>
         </section>
     );
 };

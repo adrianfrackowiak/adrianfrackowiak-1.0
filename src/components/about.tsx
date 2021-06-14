@@ -12,13 +12,7 @@ const About: React.FC = () => {
             >
                 <img src="../../aboutimg.png" alt="about - adrianfrackowiak" />
             </div>
-            <div
-                className="about-desc"
-                data-sal="slide-up"
-                data-sal-delay="500"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-bounce"
-            >
+            <div className="about-desc">
                 <h1>Adrian Frąckowiak, Front End Developer</h1>
                 <p>
                     I'm Adrian and I'm 19 years old Front End Developer. My main

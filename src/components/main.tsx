@@ -13,12 +13,7 @@ const Main: React.FC = () => {
                 Hi! I'm Adrian!
                 <br /> If you want to know more about me, scroll down.
             </p>
-            <h2
-                data-sal="slide-up"
-                data-sal-delay="100"
-                data-sal-duration="1200"
-                data-sal-easing="ease-out-bounce"
-            >
+            <h2>
                 I'm creating beautiful websites.
                 <br /> Got a project? Let's talk!
             </h2>

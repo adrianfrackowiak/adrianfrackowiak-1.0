@@ -19,13 +19,7 @@ const Project: React.FC<ProjectPros> = ({
 }) => {
     return (
         <div className="project">
-            <div
-                className="project-desc"
-                data-sal="slide-up"
-                data-sal-delay="100"
-                data-sal-duration="1200"
-                data-sal-easing="ease-out-bounce"
-            >
+            <div className="project-desc">
                 <h3>{title}</h3>
                 <p>{desc}</p>
                 <ul>
