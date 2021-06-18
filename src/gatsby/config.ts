@@ -2,7 +2,29 @@ export default {
     siteMetadata: {
         title: 'adrianfrackowiak',
         author: 'Adrian Frąckowiak',
-        siteUrl: `https://www.example.com`,
+        description: 'Adrian Frąckowiak - Front End Developer - Portfolio',
+        url: 'https://adrianfrackowiak.pl',
+        keywords: [
+            'portfolio',
+            'front end developer',
+            'adrian frackowiak',
+            'front end',
+            'portfolio front end developer',
+            'react portfolio',
+            'front end blog',
+            'portoflio blog',
+            'gatsby blog',
+            'gatsby portfolio',
+            'Adrian Frąckowiak',
+            'gatsby',
+            'typescript',
+            'javascript',
+            'react',
+            'react page',
+            'react portfolio',
+            'front end dev',
+        ],
+        image: 'src/images/icon.png',
     },
     plugins: [
         'gatsby-plugin-sass',
@@ -13,6 +35,11 @@ export default {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
+                name: 'adrianfrackowiak',
+                short_name: 'adrianfrackowiak',
+                description:
+                    'Adrian Frąckowiak - Front End Developer - Portfolio',
+                start_url: `/`,
                 icon: 'src/images/icon.png',
             },
         },
