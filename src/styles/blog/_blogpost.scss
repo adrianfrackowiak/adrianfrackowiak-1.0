@@ -33,3 +33,23 @@
         }
     }
 }
+
+@include breakpoint(l) {
+    .blog-post {
+        .post-category,
+        .post-title,
+        .post-content {
+            width: 60vw;
+        }
+    }
+}
+
+@include breakpoint(s) {
+    .blog-post {
+        .post-category,
+        .post-title,
+        .post-content {
+            width: 90vw;
+        }
+    }
+}

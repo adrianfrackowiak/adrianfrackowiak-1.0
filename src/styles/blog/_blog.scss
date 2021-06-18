@@ -1,3 +1,36 @@
+.blog-header {
+    .blog-nav {
+        justify-content: flex-end;
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                padding: 0 0 0 4rem;
+
+                button {
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+
+                button:after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 1px;
+                    background: $black;
+                    transition: width 0.3s;
+                }
+
+                button:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 .blog {
     display: flex;
     flex-direction: column;
@@ -43,5 +76,26 @@
         .blog-btn:hover:after {
             width: 100%;
         }
+    }
+}
+
+@include breakpoint(xl) {
+    .blog {
+        padding: 0 10rem;
+    }
+}
+
+@include breakpoint(l) {
+    .blog {
+        padding: 0 6rem;
+        .blog-box {
+            width: 60vw;
+        }
+    }
+}
+
+@include breakpoint(m) {
+    .blog {
+        padding: 0 1rem;
     }
 }
