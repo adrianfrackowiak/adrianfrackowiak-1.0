@@ -3,7 +3,7 @@ export default {
         title: 'adrianfrackowiak',
         author: 'Adrian Frąckowiak',
         description: 'Adrian Frąckowiak - Front End Developer - Portfolio',
-        url: 'https://adrianfrackowiak.pl',
+        siteUrl: 'https://adrianfrackowiak.pl',
         keywords: [
             'portfolio',
             'front end developer',
