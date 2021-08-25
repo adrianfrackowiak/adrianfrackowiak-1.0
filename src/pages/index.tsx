@@ -6,7 +6,6 @@ import About from '../components/about';
 import Resume from '../components/resume';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
-import '../styles/index.scss';
 
 const IndexPage: React.FC = () => {
     return (
