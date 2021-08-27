@@ -11,95 +11,29 @@ const Header: React.FC = () => {
     };
 
     return (
-        <header>
-            <Link to="/">
-                <img src="../../icon.png" alt="logo - adrianfrackowiak" />
-            </Link>
-            <nav className="nav-links">
-                <ul>
+        <header className="relative px-4 w-full mx-auto flex items-center justify-between h-24 lg:px-6">
+            <div>
+                <Link to="/">
+                    <img src="../../icon.png" alt="logo - adrianfrackowiak" />
+                </Link>
+            </div>
+            <nav>
+                <ul className="flex items-center space-x-10">
                     <li>
-                        <button onClick={() => scrollTo('#about')}>
-                            About
+                        <button className="py-3 rounded-full text-base font-medium transition-all">
+                            Blog
                         </button>
                     </li>
                     <li>
-                        <button onClick={() => scrollTo('#resume')}>
-                            Resume
-                        </button>
-                    </li>
-                    <li>
-                        <button onClick={() => scrollTo('#portfolio')}>
-                            Portfolio
-                        </button>
-                    </li>
-                    <li>
-                        <button onClick={() => scrollTo('#contact')}>
-                            Contact
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <Link to="/blog">Blog</Link>
+                        <button
+                            onClick={() => scrollTo('#about')}
+                            className="px-5 lg:px-8 py-3 rounded-full text-sm font-medium text-white bg-black transition-all"
+                        >
+                            Get in touch
                         </button>
                     </li>
                 </ul>
             </nav>
-            {isBurger ? (
-                <>
-                    <FaTimes onClick={handleBurger} className="ham-nav" />
-                    <nav className="mobile-nav">
-                        <ul>
-                            <li>
-                                <button
-                                    onClick={() => {
-                                        scrollTo('#about');
-                                        handleBurger();
-                                    }}
-                                >
-                                    About
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    onClick={() => {
-                                        scrollTo('#resume');
-                                        handleBurger();
-                                    }}
-                                >
-                                    Resume
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    onClick={() => {
-                                        scrollTo('#portfolio');
-                                        handleBurger();
-                                    }}
-                                >
-                                    Portfolio
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    onClick={() => {
-                                        scrollTo('#contact');
-                                        handleBurger();
-                                    }}
-                                >
-                                    Contact
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                    <Link to="/blog">Blog</Link>
-                                </button>
-                            </li>
-                        </ul>
-                    </nav>
-                </>
-            ) : (
-                <FaBars onClick={handleBurger} className="ham-nav" />
-            )}
         </header>
     );
 };
