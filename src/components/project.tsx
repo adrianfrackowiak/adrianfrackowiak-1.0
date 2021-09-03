@@ -59,6 +59,7 @@ const Project: React.FC<ProjectPros> = ({
                     </li>
                 </ul>
             </div>
+
             <div className="lg:absolute lg:right-0 px-4 mx-auto flex items-center justify-center w-full ">
                 <img
                     src={img}
@@ -67,7 +68,7 @@ const Project: React.FC<ProjectPros> = ({
                 />
                 <img
                     src={imgMobile}
-                    className="md:hidden mx-10 z-10 w-300 h-auto"
+                    className="md:hidden mx-10 z-10 w-300 h-auto  "
                     loading="lazy"
                 />
             </div>

@@ -144,7 +144,10 @@ const Portfolio: React.FC = () => {
                 imgMobile={Projects[projectsNav].mobile}
             />
             <div
-                className={'w-full h-64 -mt-32 lg:mt-12 z-0 ' + projectColor}
+                className={
+                    'w-full h-64 -mt-32 lg:mt-12 z-0 transition ease-in-out duration-750 ' +
+                    projectColor
+                }
             ></div>
         </section>
     );

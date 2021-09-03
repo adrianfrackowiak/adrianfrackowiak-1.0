@@ -20,14 +20,20 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
                     Developer
                 </title>
             </Helmet>
-            <section className="blog-post">
-                <p className="post-category">{post.frontmatter.category}</p>
-                <h1 className="post-title">{post.frontmatter.title}</h1>
-                <div
-                    className="post-content"
-                    dangerouslySetInnerHTML={{ __html: post.html }}
-                />
-            </section>
+            <div className="w-full mx-auto px-4 lg:px-6 ">
+                <article className="mt-16 mb-16 flex flex-col items-center w-full">
+                    <p className="text-center mb-4">
+                        {post.frontmatter.category}
+                    </p>
+                    <h1 className="text-center text-3xl font-bold mb-12">
+                        {post.frontmatter.title}
+                    </h1>
+                    <div
+                        className="w-full prose lg:prose-xl"
+                        dangerouslySetInnerHTML={{ __html: post.html }}
+                    />
+                </article>
+            </div>
         </BlogLayout>
     );
 };
