@@ -1,15 +1,15 @@
 import React from 'react';
 import BlogHeader from './blog-header';
-import BlogFooter from './blog-footer';
+import Footer from '../footer';
 
 const BlogLayout: React.FC = ({ children }) => {
     return (
-        <div className="blog-container">
-            <div className="blog-content">
+        <div className="antialiased min-h-screen text-base lg:text-lg flex flex-col">
+            <div className="flex flex-col items-center justify-center min-h-screen">
                 <BlogHeader />
                 {children}
             </div>
-            <BlogFooter />
+            <Footer />
         </div>
     );
 };

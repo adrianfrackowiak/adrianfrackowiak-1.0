@@ -6,7 +6,6 @@ import About from '../components/about';
 import Resume from '../components/resume';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
-import '../styles/index.scss';
 
 const IndexPage: React.FC = () => {
     return (
@@ -15,7 +14,6 @@ const IndexPage: React.FC = () => {
                 <meta charSet="utf-8" />
                 <title>Adrian Frąckowiak - Front End Developer</title>
             </Helmet>
-            <Main />
             <About />
             <Resume />
             <Portfolio />

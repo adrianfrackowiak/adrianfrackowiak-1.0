@@ -30,6 +30,7 @@ export default {
         'gatsby-plugin-sass',
         'gatsby-plugin-image',
         'gatsby-plugin-react-helmet',
+        'gatsby-plugin-postcss',
         `gatsby-plugin-smoothscroll`,
         'gatsby-plugin-sitemap',
         {
