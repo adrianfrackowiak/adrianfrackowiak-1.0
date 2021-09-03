@@ -21,7 +21,7 @@ const Blog: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
             </Helmet>
             <section className="px-4 w-full max-w-7xl mx-auto lg:mt-20 lg:mb-20 flex flex-col  lg:px-6">
                 {data.allMarkdownRemark.edges.map(({ node }) => (
-                    <div className="w-1/2 mb-16" key={node.id}>
+                    <div className="w-full lg:w-1/2 mt-16 mb-16" key={node.id}>
                         <Link to={node.fields.slug}>
                             <h3 className="text-3xl font-bold mb-6">
                                 {node.frontmatter.title}
