@@ -14,7 +14,6 @@ const IndexPage: React.FC = () => {
                 <meta charSet="utf-8" />
                 <title>Adrian Frąckowiak - Front End Developer</title>
             </Helmet>
-            <Main />
             <About />
             <Resume />
             <Portfolio />

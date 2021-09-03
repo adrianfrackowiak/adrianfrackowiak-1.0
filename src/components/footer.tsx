@@ -5,10 +5,10 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
     return (
-        <footer>
-            <p>created by adrianfrackowiak</p>
-            <nav className="nav-socials">
-                <ul>
+        <footer className="px-4 max-w-7xl mx-auto w-full pt-6 pb-6 flex flex-col lg:flex-row justify-between items-center text-base lg:px-6">
+            <p className="mb-6 lg:mb-0">created by adrianfrackowiak</p>
+            <nav>
+                <ul className="flex space-x-8">
                     <li>
                         <a
                             href="https://github.com/adrianfrackowiak/"

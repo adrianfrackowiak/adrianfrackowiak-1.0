@@ -5,7 +5,7 @@ import Main from './main';
 
 const Layout: React.FC = ({ children }) => {
     return (
-        <div className="antialiased min-h-screen text-lg flex flex-col">
+        <div className="antialiased min-h-screen text-base lg:text-lg flex flex-col">
             <div className="flex flex-col flex-grow items-center">
                 <div className="flex flex-col justify-center min-h-screen max-w-7xl">
                     <Header />

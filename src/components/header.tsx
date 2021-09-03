@@ -6,10 +6,6 @@ import { FaTimes, FaBars } from 'react-icons/fa';
 const Header: React.FC = () => {
     const [isBurger, setIsBurger] = useState<boolean>(false);
 
-    const handleBurger = () => {
-        isBurger ? setIsBurger(false) : setIsBurger(true);
-    };
-
     return (
         <header className="relative px-4 w-full mx-auto flex items-center justify-between h-24 lg:px-6">
             <div>
@@ -21,7 +17,7 @@ const Header: React.FC = () => {
                 <ul className="flex items-center space-x-10">
                     <li>
                         <button className="py-3 rounded-full text-base font-medium transition-all">
-                            Blog
+                            <Link to="/blog">Blog</Link>
                         </button>
                     </li>
                     <li>

@@ -3,7 +3,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Main: React.FC = () => {
     return (
-        <main className="px-4 w-full mx-auto mt-20 mb-20 flex flex-col flex-wrap flex-grow justify-center items-center lg:px-6 lg:flex-row">
+        <main className="px-4 w-full mx-auto lg:mt-20 lg:mb-20 flex flex-col flex-wrap flex-grow justify-center items-center lg:px-6 lg:flex-row">
             <div className="w-full flex flex-col items-center">
                 <img src="../../heroimg.png" alt="" className="mb-10" />
                 <h2 className="text-4xl mb-10 font-extrabold text-black xl:text-6xl leading-tight xl:leading-snug text-center lg:w-4/5">
@@ -19,7 +19,7 @@ const Main: React.FC = () => {
                 </p>
                 <button
                     onClick={() => scrollTo('#about')}
-                    className="px-5 lg:px-12 py-4 rounded-full text-base font-medium text-white bg-black transition-all"
+                    className="px-5 lg:px-12 py-3 rounded-full text-base font-medium text-white bg-black transition-all"
                 >
                     Explore now
                 </button>
