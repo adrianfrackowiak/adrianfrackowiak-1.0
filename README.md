@@ -3,14 +3,21 @@
 i'm looking for a my first real job as a react dev. i can learn new stuff if it's required. 
 
 #### technologies i used
-- javascript
-- scss
-- react
+- reactjs
 - typescript
-- gatsby
+- javascript
+- gatsby / next.js
+- scss
+- tailwindcss / material ui
 - graphql
-- firebase
 - rest api
+- firebase db, auth
+- postgres
+- docker
+- git, github
+- visual studio code
+- vercel, netlify, heroku
+- adobe ps, ai, xd
 
 #### currently i learn
 - react native
