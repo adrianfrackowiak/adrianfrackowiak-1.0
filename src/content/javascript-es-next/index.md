@@ -8,7 +8,7 @@ category: JavaScript
 
 ECMAScript is the standard upon which JavaScript is based. ES6 is a standard published in June 2015. ES NEXT is a dynamic name that refers to whatever the next version is at time of writing.
 
-![ES6 to ES NEXT (ES2021) - adrianfrackowiak.pl - frontend react developer](/es6-to-esnext.webp)
+![ES6 to ES NEXT (ES2021) - adrianfrackowiak.pl - frontend react developer](/es6-to-esnext.jpg)
 
 ### Latest ECMAScript - JavaScript
 
